@@ -45,7 +45,7 @@ Conteúdo nunca fica escrito dentro de página ou componente: entra pelos JSON d
 
 Nunca use `<img>` apontando para uma master. Use os componentes:
 
-- `Foto.astro` — gera WebP (e JPEG de reserva) em 360/480/720/1024 px e o navegador baixa só o tamanho do slot. A prop `sizes` informa a largura CSS do slot em cada breakpoint.
+- `Foto.astro` — gera WebP (e JPEG de reserva) em 360/480/560/720/1024 px e o navegador baixa só o tamanho do slot. A prop `sizes` informa a largura CSS do slot em cada breakpoint.
 - `Logo.astro` — logo na altura exata de uso, em 1x a 3x.
 
 O redimensionamento passa por `src/servico-imagens.mjs` (sharp + nitidez). As masters têm 1024 px: slots maiores que isso em telas de alta densidade (o destaque do mosaico, o lightbox) são ampliados pelo navegador. Só masters maiores resolvem — ver "Pendências".

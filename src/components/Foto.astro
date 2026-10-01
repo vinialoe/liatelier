@@ -13,7 +13,7 @@ interface Props {
   prioridade?: boolean;       // true só para a imagem principal da dobra (LCP)
   class?: string;
 }
-const { src, alt, sizes, widths = [360, 480, 720, 1024], prioridade = false, class: classe } = Astro.props;
+const { src, alt, sizes, widths = [360, 480, 560, 720, 1024], prioridade = false, class: classe } = Astro.props;
 // nunca pedir mais pixels do que a master tem (upscale não cria definição)
 const larguras = [...new Set(widths.map((w) => Math.min(w, src.width)))];
 ---
