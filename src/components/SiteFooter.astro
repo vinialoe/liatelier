@@ -1,0 +1,25 @@
+---
+import Barrado from './Barrado.astro';
+import Logo from './Logo.astro';
+import site from '../data/site.json';
+---
+<footer id="contato">
+  <Barrado variante="penas-claro" />
+  <div class="wrap inner">
+    <Logo altura={88} />
+    <div class="canais">
+      <a href={site.contato.whatsapp}>WhatsApp {site.contato.whatsapp_label}</a>
+      <a href={`mailto:${site.contato.email}`}>{site.contato.email}</a>
+      <a href={site.contato.instagram}>{site.contato.instagram_handle}</a>
+    </div>
+    <div>© Liatelier · Perdizes, São Paulo · desde 1994</div>
+  </div>
+</footer>
+<style>
+footer{background:var(--tinta);color:#EFE9DD;padding:0 0 56px;margin-top:0}
+footer :global(.barrado){background-color:transparent;margin-bottom:48px}
+.inner{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+footer :global(img){height:88px;width:auto}
+.canais{display:flex;gap:8px 22px;flex-wrap:wrap}
+footer a{color:#fff}
+</style>

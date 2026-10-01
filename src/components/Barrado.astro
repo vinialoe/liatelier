@@ -1,0 +1,9 @@
+---
+interface Props { variante?: 'penas' | 'penas-claro' | 'faianca'; }
+const { variante = 'penas' } = Astro.props;
+const src = `/barrado-${variante}.svg`;
+---
+<div class="barrado" role="presentation" style={`background-image:url('${src}')`}></div>
+<style>
+.barrado{height:52px;background-repeat:repeat-x;background-position:center}
+</style>

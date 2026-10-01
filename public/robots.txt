@@ -1,0 +1,1 @@
+User-agent: *\nAllow: /\nSitemap: https://liatelier.com.br/sitemap-index.xml\n

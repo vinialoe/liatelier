@@ -1,0 +1,16 @@
+# dependências e saídas de build (o Netlify gera no deploy)
+node_modules/
+dist/
+.astro/
+
+# pacotes do fluxo antigo (arrastar o dist no Netlify) — substituídos pelo deploy via Git
+Old/
+liatelier-dist-netlify-v*/
+*.zip
+
+# ambiente local
+.env
+.env.*
+.netlify/
+.DS_Store
+Thumbs.db

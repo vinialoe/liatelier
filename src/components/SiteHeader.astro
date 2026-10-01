@@ -1,0 +1,23 @@
+---
+import Logo from './Logo.astro';
+import site from '../data/site.json';
+const { pathname } = Astro.url;
+---
+<header class="wrap">
+  <a href="/" class="logo-link"><Logo altura={148} alt="Liatelier Cerâmica — página inicial" prioridade /></a>
+  <nav aria-label="Navegação principal">
+    {site.nav.map((item) => (
+      <a href={item.href} class:list={[{ destaque: item.destaque, ativo: pathname === item.href }]}>{item.label}</a>
+    ))}
+  </nav>
+</header>
+<style>
+header{display:flex;flex-direction:column;align-items:center;gap:16px;padding:26px 0 20px}
+.logo-link :global(img){height:clamp(112px,14vw,148px);width:auto;border-radius:50%;box-shadow:0 10px 24px rgba(55,50,43,.14)}
+nav{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 10px}
+nav a{position:relative;text-decoration:none;color:var(--tinta);font-size:1.08rem;font-weight:600;padding:8px 16px;border-radius:999px}
+nav a:hover{color:var(--terra-texto);background:rgba(232,220,200,.55)}
+nav a.destaque{font-weight:800;color:var(--terra-texto);border:1.5px solid var(--terra)}
+nav a.ativo{background:var(--areia-claro)}
+@media(max-width:640px){header{padding-inline:12px}nav{gap:6px 4px}nav a{font-size:1rem;padding:7px 10px}}
+</style>

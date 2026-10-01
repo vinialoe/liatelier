@@ -1,0 +1,338 @@
+{
+  "pecas": [
+    {
+      "id": "peca-leopardo",
+      "ordem": 1,
+      "foto": "../assets/pecas/peca-leopardo.jpg",
+      "alt": "Vaso de cerâmica pintado à mão com leopardo e flores tropicais",
+      "legenda": "Pintura à mão",
+      "home": 2
+    },
+    {
+      "id": "peca-01-2",
+      "ordem": 2,
+      "foto": "../assets/pecas/peca-01-2.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-06-2",
+      "ordem": 3,
+      "foto": "../assets/pecas/peca-06-2.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-18-2",
+      "ordem": 4,
+      "foto": "../assets/pecas/peca-18-2.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-18-1",
+      "ordem": 5,
+      "foto": "../assets/pecas/peca-18-1.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-16-3",
+      "ordem": 6,
+      "foto": "../assets/pecas/peca-16-3.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-02-2",
+      "ordem": 7,
+      "foto": "../assets/pecas/peca-02-2.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-11-1",
+      "ordem": 8,
+      "foto": "../assets/pecas/peca-11-1.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-05-1",
+      "ordem": 9,
+      "foto": "../assets/pecas/peca-05-1.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-14-3",
+      "ordem": 10,
+      "foto": "../assets/pecas/peca-14-3.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-10-1",
+      "ordem": 11,
+      "foto": "../assets/pecas/peca-10-1.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-01-1",
+      "ordem": 12,
+      "foto": "../assets/pecas/peca-01-1.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão",
+      "home": 3
+    },
+    {
+      "id": "peca-01-3",
+      "ordem": 13,
+      "foto": "../assets/pecas/peca-01-3.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-02-3",
+      "ordem": 14,
+      "foto": "../assets/pecas/peca-02-3.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-03-1",
+      "ordem": 15,
+      "foto": "../assets/pecas/peca-03-1.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-03-2",
+      "ordem": 16,
+      "foto": "../assets/pecas/peca-03-2.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-04-2",
+      "ordem": 17,
+      "foto": "../assets/pecas/peca-04-2.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-05-2",
+      "ordem": 18,
+      "foto": "../assets/pecas/peca-05-2.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-05-3",
+      "ordem": 19,
+      "foto": "../assets/pecas/peca-05-3.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão",
+      "home": 1
+    },
+    {
+      "id": "peca-06-1",
+      "ordem": 20,
+      "foto": "../assets/pecas/peca-06-1.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-06-3",
+      "ordem": 21,
+      "foto": "../assets/pecas/peca-06-3.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão",
+      "home": 5
+    },
+    {
+      "id": "peca-07-1",
+      "ordem": 22,
+      "foto": "../assets/pecas/peca-07-1.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-07-2",
+      "ordem": 23,
+      "foto": "../assets/pecas/peca-07-2.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-07-3",
+      "ordem": 24,
+      "foto": "../assets/pecas/peca-07-3.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-08-1",
+      "ordem": 25,
+      "foto": "../assets/pecas/peca-08-1.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-08-2",
+      "ordem": 26,
+      "foto": "../assets/pecas/peca-08-2.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-09-1",
+      "ordem": 27,
+      "foto": "../assets/pecas/peca-09-1.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão",
+      "home": 4
+    },
+    {
+      "id": "peca-09-2",
+      "ordem": 28,
+      "foto": "../assets/pecas/peca-09-2.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-09-3",
+      "ordem": 29,
+      "foto": "../assets/pecas/peca-09-3.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-12-1",
+      "ordem": 30,
+      "foto": "../assets/pecas/peca-12-1.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-12-2",
+      "ordem": 31,
+      "foto": "../assets/pecas/peca-12-2.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-12-3",
+      "ordem": 32,
+      "foto": "../assets/pecas/peca-12-3.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-13-1",
+      "ordem": 33,
+      "foto": "../assets/pecas/peca-13-1.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-14-1",
+      "ordem": 34,
+      "foto": "../assets/pecas/peca-14-1.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-14-2",
+      "ordem": 35,
+      "foto": "../assets/pecas/peca-14-2.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-15-1",
+      "ordem": 36,
+      "foto": "../assets/pecas/peca-15-1.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão",
+      "home": 6
+    },
+    {
+      "id": "peca-15-2",
+      "ordem": 37,
+      "foto": "../assets/pecas/peca-15-2.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-16-1",
+      "ordem": 38,
+      "foto": "../assets/pecas/peca-16-1.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-16-2",
+      "ordem": 39,
+      "foto": "../assets/pecas/peca-16-2.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-17-2",
+      "ordem": 40,
+      "foto": "../assets/pecas/peca-17-2.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão"
+    },
+    {
+      "id": "peca-10-2",
+      "ordem": 41,
+      "foto": "../assets/pecas/peca-10-2.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão",
+      "mosaico": 1
+    },
+    {
+      "id": "peca-04-1",
+      "ordem": 42,
+      "foto": "../assets/pecas/peca-04-1.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão",
+      "mosaico": 2
+    },
+    {
+      "id": "peca-02-1",
+      "ordem": 43,
+      "foto": "../assets/pecas/peca-02-1.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão",
+      "mosaico": 3
+    },
+    {
+      "id": "peca-03-3",
+      "ordem": 44,
+      "foto": "../assets/pecas/peca-03-3.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão",
+      "mosaico": 4
+    },
+    {
+      "id": "peca-08-3",
+      "ordem": 45,
+      "foto": "../assets/pecas/peca-08-3.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão",
+      "mosaico": 5
+    },
+    {
+      "id": "peca-13-2",
+      "ordem": 46,
+      "foto": "../assets/pecas/peca-13-2.jpg",
+      "alt": "Peça de cerâmica pintada à mão no Liatelier",
+      "legenda": "Pintura à mão",
+      "mosaico": 6
+    }
+  ]
+}

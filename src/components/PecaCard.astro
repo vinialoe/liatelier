@@ -1,0 +1,16 @@
+---
+import Foto from './Foto.astro';
+
+interface Props { src: ImageMetadata; alt: string; sizes: string; legenda?: string; mascara?: 'circulo' | 'cantos' | 'organica'; }
+const { src, alt, sizes, legenda, mascara = 'cantos' } = Astro.props;
+---
+<figure class:list={['peca', mascara]}>
+  <Foto src={src} alt={alt} sizes={sizes} />
+  {legenda && <figcaption>{legenda}</figcaption>}
+</figure>
+<style>
+.peca{margin:0}
+.peca :global(img){width:100%;aspect-ratio:1;object-fit:cover;display:block;box-shadow:0 8px 20px -12px rgba(55,50,43,.35)}
+.circulo :global(img),.cantos :global(img),.organica :global(img){border-radius:var(--radius-image)} /* fotos de peças nunca em círculo/blob — cortavam a peça (fix produção 2026-08-04) */
+figcaption{font-size:.82rem;color:var(--muted);margin-top:12px;text-align:center}
+</style>

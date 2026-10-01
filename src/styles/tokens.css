@@ -1,0 +1,40 @@
+:root {
+  /* gerado de brand/brand-tokens.json v1.0.0 — não editar à mão */
+  --creme: #FAF6EE;
+  --areia: #E8DCC8;
+  --areia-claro: #F2EADA;
+  --tinta: #37322B;
+  --terra: #C06B3E;
+  --terra-texto: #96501F;   /* terracota p/ TEXTO pequeno e fundos de botão — WCAG AA */
+  --terra-suave: #E9CDBB;
+  --verde: #4E7A5F;
+  --verde-prof: #2E4A3E;
+  --petroleo: #3A5A78;
+  --petroleo-suave: #C9D6E2;
+  --osso: #FDFCF9;
+  --muted: #6B6356;
+  --text-on-contrast: #F2EDE2;
+  --font-display: 'Lora Variable', Georgia, serif;
+  --font-body: 'Karla Variable', system-ui, sans-serif;
+  --radius-card: 22px;
+  --radius-image: 26px;
+  --radius-organic: 52% 48% 55% 45% / 50% 55% 45% 50%;
+  --shadow-soft: 0 24px 48px -28px rgba(55,50,43,.28);
+  --max-w: 1120px;
+}
+*{margin:0;box-sizing:border-box}
+picture{display:contents} /* <picture> não gera caixa: o layout enxerga só o <img> */
+picture>source{display:none} /* senão cada <source> vira uma célula vazia nas grades */
+img{max-width:100%;height:auto} /* height:auto: sem isso, o atributo height=900 vence o aspect-ratio e 'dá zoom' (fix produção 2026-08-04) */
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{font-family:var(--font-body);background:var(--creme);color:var(--tinta);line-height:1.7;font-size:17px}
+@media (max-width:560px){body{font-size:16.5px}}
+h1,h2,h3{font-family:var(--font-display);font-weight:500}
+a{color:var(--petroleo)}
+a:focus,button:focus{outline:2px solid var(--petroleo);outline-offset:2px}
+main{overflow-x:clip} /* grafismos decorativos (manchas do hero) não podem alargar a página — causava rolagem lateral no celular */
+.wrap{max-width:var(--max-w);margin:0 auto;padding:0 24px}
+.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:.78rem;color:#3E6350;font-weight:700}
+.btn{display:inline-block;background:var(--terra-texto);color:#fff;padding:13px 28px;border-radius:999px;text-decoration:none;font-weight:700}
+.btn.ghost{background:transparent;color:var(--tinta);border:1.5px solid var(--tinta)}

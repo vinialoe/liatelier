@@ -1,0 +1,80 @@
+---
+import Base from '../layouts/Base.astro';
+import Filete from '../components/Filete.astro';
+import Barrado from '../components/Barrado.astro';
+import Foto from '../components/Foto.astro';
+import tigela from '../assets/pecas/peca-15-2.jpg';
+import site from '../data/site.json';
+const a = site.aulas;
+---
+<Base title="Aulas e experiências — Liatelier · pintura em cerâmica em São Paulo" description="Aulas semanais, workshops, aulas mestre, eventos como vinhos e pintura, parcerias e viagens artísticas. Pintura em cerâmica para todos os níveis, desde 1994.">
+  <div class="wrap topo">
+    <h1>{a.titulo}</h1>
+    <Filete cor="#3A5A78" largura={180} />
+    <p class="lead">{a.abertura}</p>
+  </div>
+  <section class="wrap">
+    <div class="cards">
+      {site.formatos.map((f) => (
+        <div class="card">
+          <svg viewBox="0 0 120 10" width="86" aria-hidden="true"><path d="M3 6 C 28 2, 58 9, 88 5 S 112 4, 117 6" stroke={f.cor} stroke-width="3" fill="none" stroke-linecap="round" /></svg>
+          <h2>{f.t}</h2><p>{f.d}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+  <section class="quem">
+    <div class="wrap duo">
+      <div>
+        <span class="kicker">Para quem</span>
+        <h2>Do primeiro traço ao avançado</h2>
+        <div class="h2filete"><Filete cor="#4E7A5F" largura={150} /></div>
+        <p>{a.para_quem}</p>
+      </div>
+      <Foto src={tigela} alt="Tigela de cerâmica pintada à mão no Liatelier" sizes="(max-width:840px) min(calc(100vw - 48px), 380px), 427px" />
+    </div>
+  </section>
+  <div class="apoio"><Barrado variante="faianca" /></div>
+  <section class="wrap b2b">
+    <span class="kicker" style="color:var(--terra-texto)">{a.b2b_titulo}</span>
+    <h2>Experiências sob medida</h2>
+    <div class="h2filete"><Filete cor="#C06B3E" largura={150} /></div>
+    <p>{a.b2b_texto}</p>
+  </section>
+  <section class="cta-final">
+    <div class="wrap">
+      <h2>Vamos conversar?</h2>
+      <p>{a.cta_texto}</p>
+      <p class="ctas">
+        <a class="btn" href={site.contato.whatsapp}>WhatsApp {site.contato.whatsapp_label}</a>
+        <a class="btn ghost" href={`mailto:${site.contato.email}`}>{site.contato.email}</a>
+        <a class="btn ghost" href={site.contato.instagram}>{site.contato.instagram_handle}</a>
+      </p>
+    </div>
+  </section>
+</Base>
+<style>
+.topo{padding:48px 24px 8px;text-align:center}
+.topo :global(.filete){margin:0 auto}
+h1{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:8px}
+.lead{max-width:62ch;margin:20px auto 0;color:#5c554a;font-size:1.05rem}
+section{padding-block:48px} /* só vertical: o respiro lateral vem do .wrap */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--osso);border-radius:var(--radius-card);padding:26px 26px 24px}
+.card svg{display:block;margin-bottom:12px}
+.card h2{font-size:1.15rem;margin-bottom:6px}
+.card p{font-size:.95rem;color:#5c554a}
+.quem{background:var(--osso)}
+.duo{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center}
+.duo p{max-width:58ch}
+.duo :global(img){width:100%;height:auto;border-radius:50%;box-shadow:var(--shadow-soft)}
+h2{font-size:clamp(1.5rem,2.6vw,2rem);margin:8px 0 6px}
+.h2filete{margin-bottom:22px}
+.apoio{background:var(--creme)}
+.b2b p{max-width:66ch}
+.cta-final{background:var(--areia-claro);text-align:center;padding:64px 0 72px}
+.cta-final p{max-width:52ch;margin:10px auto 0;color:#5c554a}
+.ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+@media(max-width:840px){.cards{grid-template-columns:1fr 1fr}.duo{grid-template-columns:1fr}.duo :global(img){max-width:380px;margin:0 auto}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}}
+</style>

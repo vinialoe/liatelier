@@ -1,0 +1,24 @@
+# Deploy do site pelo Netlify a partir do GitHub.
+# No painel do Netlify nada precisa ser preenchido à mão: build e publish vêm daqui.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"   # Astro 7 exige Node >= 22.12
+
+# Tudo em /_astro/ tem hash no nome (imagens, CSS, fontes): nunca muda, cache de 1 ano.
+# Sem isso o Netlify revalida cada arquivo a cada visita.
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"

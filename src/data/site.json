@@ -1,0 +1,188 @@
+{
+  "nome": "Liatelier",
+  "titulo_seo": "Liatelier — pintura em cerâmica à mão, desde 1994 · São Paulo",
+  "descricao_seo": "Ateliê de pintura em cerâmica de Lia Mara Jorge Aloe na região de Perdizes, São Paulo. Peças pintadas à mão em faiança e porcelana, aulas, workshops e experiências desde 1994.",
+  "bio_curta": "Artista plástica e designer pela FAAP, Lia Mara Jorge Aloe dedica-se desde 1994 à pintura em cerâmica no Liatelier, seu ateliê próprio na região de Perdizes, em São Paulo. Especialista em cerâmica de baixo esmalte e alta temperatura, e em porcelana, formou diversas gerações de alunas, foi diretora cultural da ACESC por cinco anos e atualmente dirige a área cultural do Esporte Clube Sírio.",
+  "tecnica": "No baixo esmalte e na alta temperatura, cada peça em biscoito é desenhada, filetada, pintada e esmaltada à mão antes de ir ao forno — queimas de 998 °C a 1.240 °C.",
+  "citacao": "Todos são livres para criar — a personalidade e o estilo de cada pessoa são respeitados.",
+  "credenciais": [
+    "FAAP",
+    "Ateliê próprio · Perdizes",
+    "Direção Cultural ACESC · +150 mil associados",
+    "Esporte Clube Sírio",
+    "Revista Casa e Jardim"
+  ],
+  "etapas": [
+    {
+      "n": "um",
+      "t": "Desenho",
+      "d": "o traço nasce sobre o biscoito, a cerâmica ainda crua"
+    },
+    {
+      "n": "dois",
+      "t": "Filetagem",
+      "d": "as linhas finas que estruturam a composição"
+    },
+    {
+      "n": "três",
+      "t": "Pintura",
+      "d": "cor por cor, pincel por pincel"
+    },
+    {
+      "n": "quatro",
+      "t": "Esmalte",
+      "d": "a camada que sela e dá brilho"
+    },
+    {
+      "n": "cinco",
+      "t": "Queima",
+      "d": "queimas de 998 °C a 1.240 °C — onde a peça se torna definitiva"
+    }
+  ],
+  "formatos": [
+    {
+      "t": "Aulas semanais",
+      "d": "Turmas pequenas, ritmo individualizado — do primeiro traço ao esmalte, sem esperar formação de turma.",
+      "cor": "#C06B3E"
+    },
+    {
+      "t": "Workshops",
+      "d": "Encontros pontuais e imersivos, para experimentar a pintura em cerâmica em um dia.",
+      "cor": "#4E7A5F"
+    },
+    {
+      "t": "Aulas mestre",
+      "d": "Sessões avançadas e pontuais, para quem já pinta e quer aprofundar técnica e repertório.",
+      "cor": "#3A5A78"
+    },
+    {
+      "t": "Eventos e experiências",
+      "d": "Vivências como “vinhos e pintura”, em parceria com marcas e estabelecimentos.",
+      "cor": "#4E7A5F"
+    },
+    {
+      "t": "Parcerias",
+      "d": "Colaborações com marcas, clubes e espaços que queiram levar a cerâmica ao seu público.",
+      "cor": "#3A5A78"
+    },
+    {
+      "t": "Viagens artísticas",
+      "d": "Roteiros culturais ligados à cerâmica e à arte — formato ocasional do ateliê.",
+      "cor": "#C06B3E"
+    }
+  ],
+  "contato": {
+    "whatsapp": "https://wa.me/5511945038299",
+    "whatsapp_label": "(11) 94503-8299",
+    "email": "contato@liatelier.com.br",
+    "instagram": "https://www.instagram.com/liatelierpinturaemceramica/",
+    "instagram_handle": "@liatelierpinturaemceramica"
+  },
+  "nav": [
+    {
+      "href": "/portfolio",
+      "label": "Portfólio",
+      "destaque": true
+    },
+    {
+      "href": "/sobre",
+      "label": "Sobre Lia"
+    },
+    {
+      "href": "/aulas",
+      "label": "Aulas e experiências"
+    },
+    {
+      "href": "/projetos",
+      "label": "Projetos"
+    },
+    {
+      "href": "/contato",
+      "label": "Contato"
+    }
+  ],
+  "sobre": {
+    "titulo": "Sobre Lia",
+    "bio_paragrafos": [
+      "Lia Mara Jorge Aloe é artista plástica, designer e professora, formada pela FAAP (Fundação Armando Álvares Penteado), com passagem pelo curso de Arquitetura do Mackenzie. Antes de dedicar-se integralmente à cerâmica, lecionou por muitos anos Educação Artística em escolas de referência de São Paulo, como Pueri Domus e Pentágono, somando à docência cursos de especialização que incluem a Arteterapia.",
+      "Sua trajetória na cerâmica nasceu da pesquisa: em viagens à Espanha, a Portugal e à Itália, estudou estilos históricos e aprimorou técnicas de pintura sobre e baixo esmalte, alta temperatura e porcelana — repertório que vai da tradição islâmica e marroquina a composições autorais. No baixo-esmalte, sua especialidade, cada peça em biscoito é desenhada, filetada, pintada e esmaltada à mão antes de ir ao forno — queimas que vão de 998 °C, no baixo esmalte, a 1.240 °C, na alta temperatura.",
+      "Em 1994 fundou o Liatelier, hoje instalado em ateliê próprio na região de Perdizes, em São Paulo, onde há três décadas forma alunas de todos os níveis — do iniciante ao avançado — em cursos regulares e workshops. Mais que técnica, o ateliê funciona como um centro de experimentação plástica: um espaço onde cada aluna desenvolve traço e estilo próprios, em um ambiente de convivência que une arte, relaxamento e amizade.",
+      "Paralelamente ao ateliê, Lia construiu uma carreira sólida em gestão cultural. Foi Diretora Cultural da ACESC (Associação de Clubes Esportivos e Sócio-Culturais de São Paulo) por cinco anos, à frente da Maratona Cultural — programa com mais de 40 eventos anuais em cerca de 20 clubes paulistanos, impactando mais de 150 mil associados com festivais de teatro, música, dança, fotografia, literatura, gastronomia e artes plásticas. É também Diretora Cultural do Esporte Clube Sírio. Seu trabalho como professora e artista já foi destaque em publicações como a revista Casa e Jardim.",
+      "Participa periodicamente de exposições coletivas e individuais."
+    ],
+    "timeline": [
+      {
+        "quando": "Formação",
+        "o_que": "Design e Artes Plásticas na FAAP; Arquitetura no Mackenzie até o 4º ano; especializações, incluindo Arteterapia"
+      },
+      {
+        "quando": "Docência",
+        "o_que": "Educação Artística nos colégios Pueri Domus e Pentágono, em São Paulo"
+      },
+      {
+        "quando": "Viagens",
+        "o_que": "Pesquisa de estilos e técnicas na Espanha, em Portugal e na Itália"
+      },
+      {
+        "quando": "1994",
+        "o_que": "Funda o Liatelier, ateliê de pintura em cerâmica em São Paulo"
+      },
+      {
+        "quando": "Reconhecimento",
+        "o_que": "O curso de baixo-esmalte do Liatelier é destaque na revista Casa e Jardim (Editora Globo)"
+      },
+      {
+        "quando": "2015–2019",
+        "o_que": "Diretora Cultural da ACESC — cinco anos à frente da Maratona Cultural"
+      },
+      {
+        "quando": "Hoje",
+        "o_que": "À frente do Liatelier — ateliê próprio na região de Perdizes — e Diretora Cultural do Esporte Clube Sírio"
+      }
+    ]
+  },
+  "aulas": {
+    "titulo": "Aulas e experiências",
+    "abertura": "Nossas aulas funcionam como um centro de experimentação plástica: técnicas de simples execução, que não exigem conhecimento profundo de arte ou desenho, ensinadas em ritmo individualizado — sem esperar formação de turma.",
+    "para_quem": "Adultas e adultos de todas as idades, do primeiro contato com o pincel ao aprofundamento técnico. Entre os resultados que as alunas relatam: firmeza no traçado, coordenação motora, criatividade, equilíbrio emocional, autoestima e — talvez o mais importante — convivência. Relaxamento, sociabilização e cultura são as três palavras da casa.",
+    "b2b_titulo": "Para empresas, marcas e clubes",
+    "b2b_texto": "O Liatelier também desenha experiências fora do ateliê: vivências como “vinhos e pintura”, workshops em eventos e parcerias com marcas e estabelecimentos. À frente da Diretoria Cultural da ACESC, Lia levou mais de 40 eventos anuais a cerca de 20 clubes de São Paulo, impactando mais de 150 mil associados — experiência institucional que sustenta projetos de qualquer porte.",
+    "cta_texto": "Sem tabela fixa: cada formato se ajusta ao grupo e ao momento. Conte o que você imagina e a Lia desenha o formato."
+  },
+  "projetos": {
+    "titulo": "Projetos e atuação",
+    "acesc": {
+      "titulo": "Diretoria Cultural da ACESC",
+      "texto": "Por cinco anos, Lia dirigiu a área cultural da ACESC — Associação de Clubes Esportivos e Sócio-Culturais de São Paulo — elaborando e implantando projetos em artes plásticas, teatro, música, dança, fotografia, gastronomia e literatura, à frente da Maratona Cultural.",
+      "numeros": [
+        {
+          "v": "+150 mil",
+          "l": "associados impactados"
+        },
+        {
+          "v": "+40",
+          "l": "eventos por ano"
+        },
+        {
+          "v": "~20",
+          "l": "clubes participantes"
+        },
+        {
+          "v": "+160",
+          "l": "horas de atividades"
+        }
+      ],
+      "programas": "Festival ACESC de Teatro (único festival amador do município de São Paulo), The Voice ACESC e Júnior, Master Chef ACESC e Kids, Mostras de Artes Plásticas, Fotografia, Dança, Literatura e Coral, e o Troféu João Uchoa Borges."
+    },
+    "sirio": "Atualmente, Lia é Diretora Cultural do Esporte Clube Sírio, em São Paulo.",
+    "docencia": "Antes do ateliê, lecionou Educação Artística por diversos anos em escolas de referência de São Paulo — Pueri Domus e Pentágono — com especializações que incluem a Arteterapia.",
+    "imprensa": "O curso de baixo-esmalte do Liatelier foi destaque na revista Casa e Jardim (Editora Globo), que registrou o processo da técnica — do desenho sobre o biscoito à queima — e o ritmo individualizado das aulas.",
+    "exposicoes": "Lia participa periodicamente de exposições coletivas e individuais."
+  },
+  "contato_pagina": {
+    "titulo": "Contato",
+    "texto": "Para aulas, workshops, eventos, parcerias ou para conversar sobre uma peça: o caminho mais rápido é o WhatsApp. O ateliê fica na região de Perdizes, em São Paulo.",
+    "fechamento": "“Nosso objetivo é o bem-estar das alunas, ensinando e preparando para que possam voar sozinhas.”"
+  },
+  "portfolio_subtitulo": "Cerâmica e porcelana com a técnica de baixo esmalte e alta temperatura"
+}

@@ -1,0 +1,72 @@
+---
+import Base from '../layouts/Base.astro';
+import Filete from '../components/Filete.astro';
+import site from '../data/site.json';
+const pj = site.projetos;
+---
+<Base title="Projetos e atuação — Lia Mara Jorge Aloe · Liatelier" description="A atuação institucional de Lia Mara Jorge Aloe: cinco anos na Diretoria Cultural da ACESC, Diretoria Cultural do Esporte Clube Sírio, docência e imprensa.">
+  <div class="wrap topo">
+    <h1>{pj.titulo}</h1>
+    <Filete cor="#4E7A5F" largura={180} />
+  </div>
+  <section class="acesc">
+    <div class="wrap">
+      <span class="kicker" style="color:var(--areia)">Gestão cultural</span>
+      <h2>{pj.acesc.titulo}</h2>
+      <div class="h2filete"><Filete cor="#E8DCC8" largura={150} /></div>
+      <p class="lead">{pj.acesc.texto}</p>
+      <div class="nums">
+        {pj.acesc.numeros.map((n) => (
+          <div><strong>{n.v}</strong><span>{n.l}</span></div>
+        ))}
+      </div>
+      <p class="programas">{pj.acesc.programas}</p>
+    </div>
+  </section>
+  <section class="wrap blocos">
+    <div class="bloco">
+      <h2>Esporte Clube Sírio</h2>
+      <div class="h2filete"><Filete cor="#3A5A78" largura={130} /></div>
+      <p>{pj.sirio}</p>
+    </div>
+    <div class="bloco">
+      <h2>Docência</h2>
+      <div class="h2filete"><Filete cor="#C06B3E" largura={130} /></div>
+      <p>{pj.docencia}</p>
+    </div>
+    <div class="bloco">
+      <h2>Na imprensa</h2>
+      <div class="h2filete"><Filete cor="#4E7A5F" largura={130} /></div>
+      <p>{pj.imprensa}</p>
+    </div>
+    <div class="bloco">
+      <h2>Exposições</h2>
+      <div class="h2filete"><Filete cor="#3A5A78" largura={130} /></div>
+      <p>{pj.exposicoes}</p>
+    </div>
+  </section>
+  <div class="wrap fech">
+    <p><a class="btn" href="/aulas">Aulas e experiências</a> <a class="btn ghost" href="/contato">Entrar em contato</a></p>
+  </div>
+</Base>
+<style>
+.topo{padding:48px 24px 24px;text-align:center}
+.topo :global(.filete){margin:0 auto}
+h1{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:8px}
+.acesc{background:var(--verde-prof);color:var(--text-on-contrast);padding:64px 0}
+.acesc h2{color:#fff;font-size:clamp(1.6rem,3vw,2.1rem);margin:8px 0 6px}
+.acesc .lead{max-width:66ch}
+.h2filete{margin-bottom:24px}
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin:36px 0}
+.nums div{display:flex;flex-direction:column;gap:2px}
+.nums strong{font-family:var(--font-display);font-size:2rem;font-weight:500;color:var(--areia)}
+.nums span{font-size:.85rem;color:#C8D8CC;letter-spacing:.06em;text-transform:uppercase}
+.programas{max-width:72ch;color:#DDE8DF;font-size:.95rem}
+.blocos{display:grid;grid-template-columns:1fr 1fr;gap:20px 56px;padding:64px 24px 24px}
+.bloco h2{font-size:1.3rem;margin-bottom:4px}
+.bloco p{max-width:56ch;color:#4a463e}
+.bloco{padding-bottom:24px}
+.fech{padding:24px 24px 88px}
+.fech p{display:flex;gap:12px;flex-wrap:wrap}
+@media(max-width:760px){.nums{grid-template-columns:1fr 1fr}.blocos{grid-template-columns:1fr}}
+</style>

@@ -1,0 +1,143 @@
+---
+import Base from '../layouts/Base.astro';
+import Filete from '../components/Filete.astro';
+import Barrado from '../components/Barrado.astro';
+import PecaCard from '../components/PecaCard.astro';
+import Foto from '../components/Foto.astro';
+import retrato from '../assets/retrato-lia.jpg';
+import site from '../data/site.json';
+import { getCollection } from 'astro:content';
+
+const pecas = await getCollection('pecas');
+const vitrine = pecas.filter((p) => p.data.home).sort((a, b) => (a.data.home ?? 9) - (b.data.home ?? 9));
+const mascaras = ['circulo', 'cantos', 'organica'] as const;
+---
+<Base>
+  <div class="hero wrap">
+    <div>
+      <h1>Pintura em cerâmica,<span class="sub"><em>à mão</em>, desde 1994.</span></h1>
+      <Filete cor="#C06B3E" largura={210} />
+      <p>{site.bio_curta}</p>
+      <p class="ctas">
+        <a class="btn" href={site.contato.whatsapp}>Conversar no WhatsApp</a>
+        <a class="btn ghost" href="/portfolio">Ver o portfólio</a>
+      </p>
+    </div>
+    <div>
+      <div class="art"><Foto src={retrato} alt="Retrato em aquarela de Lia Mara Jorge Aloe pintando uma peça de cerâmica" sizes="(max-width:840px) calc(100vw - 48px), 432px" widths={[360, 480, 720, 960]} prioridade /></div>
+      <div class="caption"><span class="nome">Lia Mara Jorge Aloe</span><span class="sub-cap">retrato em aquarela</span></div>
+    </div>
+  </div>
+
+  <div class="cred"><div class="wrap inner">
+    {site.credenciais.map((c) => <span>{c}</span>)}
+  </div></div>
+
+  <section class="wrap">
+    <span class="kicker">Portfólio</span>
+    <h2>Peças pintadas à mão</h2>
+    <p class="subtitulo">{site.portfolio_subtitulo}</p>
+    <div class="h2filete"><Filete cor="#4E7A5F" largura={160} /></div>
+    <div class="gal">
+      {vitrine.map((p, i) => (
+        <a href="/portfolio" class="peca-link">
+          <PecaCard src={p.data.foto} alt={p.data.alt} legenda={p.data.legenda} mascara={mascaras[i % 3]} sizes="(max-width:560px) calc(100vw - 48px), (max-width:840px) calc(50vw - 37px), 340px" />
+        </a>
+      ))}
+    </div>
+    <p class="ver-tudo"><a href="/portfolio">Ver o portfólio completo — todas as peças →</a></p>
+  </section>
+
+  <section class="forno">
+    <div class="wrap">
+      <span class="kicker">O ofício</span>
+      <h2>Do biscoito à queima</h2>
+      <div class="h2filete"><Filete cor="#E8DCC8" largura={160} /></div>
+      <p class="lead">{site.tecnica}</p>
+      <div class="steps">
+        {site.etapas.map((e) => (
+          <div><div class="n">{e.n}</div><h3>{e.t}</h3><p>{e.d}</p></div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <div class="apoio"><Barrado variante="faianca" /></div>
+
+  <section class="aulas wrap">
+    <span class="kicker" style="color:var(--terra-texto)">Aulas e experiências</span>
+    <h2>Seis maneiras de entrar no ateliê</h2>
+    <div class="h2filete"><Filete cor="#3A5A78" largura={160} /></div>
+    <div class="cards">
+      {site.formatos.map((f) => (
+        <div class="card">
+          <svg viewBox="0 0 120 10" width="86" aria-hidden="true"><path d="M3 6 C 28 2, 58 9, 88 5 S 112 4, 117 6" stroke={f.cor} stroke-width="3" fill="none" stroke-linecap="round" /></svg>
+          <h3>{f.t}</h3><p>{f.d}</p>
+        </div>
+      ))}
+    </div>
+    <p class="after">Sem tabela fixa: cada formato se ajusta ao grupo. <a href={`mailto:${site.contato.email}`}>Escreva</a>, chame no <a href={site.contato.whatsapp}>WhatsApp</a> ou visite o <a href={site.contato.instagram}>Instagram</a>.</p>
+  </section>
+
+  <section class="quote">
+    <div class="wrap">
+      <blockquote>“{site.citacao}”</blockquote>
+      <Filete cor="#C06B3E" largura={180} />
+      <div class="who">Lia Mara Jorge Aloe</div>
+    </div>
+  </section>
+</Base>
+
+<style>
+.hero{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;padding:56px 24px 80px}
+.hero::before{content:"";position:absolute;inset:-40px -10% 0;background:
+ radial-gradient(42% 55% at 78% 30%,rgba(232,220,200,.75),transparent 70%),
+ radial-gradient(30% 40% at 12% 80%,rgba(233,205,187,.5),transparent 70%),
+ radial-gradient(24% 34% at 60% 90%,rgba(201,214,226,.45),transparent 70%);
+ z-index:-1}
+h1{font-size:clamp(2.2rem,4.6vw,3.4rem);line-height:1.16}
+h1 em{font-style:italic;color:var(--terra-texto)}
+.sub{display:block}
+.hero p{margin:22px 0 0;font-size:1.06rem;max-width:48ch}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.art{position:relative}
+.art::before{content:"";position:absolute;inset:-16px 18px 20px -20px;background:
+ radial-gradient(60% 60% at 30% 40%,rgba(78,122,95,.30),transparent 75%),
+ radial-gradient(50% 55% at 75% 70%,rgba(192,107,62,.28),transparent 75%),var(--areia);
+ border-radius:var(--radius-organic)}
+.art :global(img){position:relative;width:100%;height:auto;border-radius:50% 50% 46% 54%/54% 46% 54% 46%}
+.caption{margin-top:16px;text-align:center;display:flex;flex-direction:column;gap:2px}
+.caption .nome{font-family:var(--font-display);font-size:1.35rem;color:var(--tinta)}
+.caption .sub-cap{font-size:.82rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.cred{border-top:1px solid #E0D6C2;border-bottom:1px solid #E0D6C2;background:var(--osso)}
+.cred .inner{display:flex;gap:12px 48px;flex-wrap:wrap;justify-content:space-between;padding:20px 24px;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+section{padding-block:80px} /* só vertical: o respiro lateral vem do .wrap */
+h2{font-size:clamp(1.7rem,3vw,2.2rem);margin:10px 0 6px}
+.subtitulo{color:#5c554a;font-size:1.02rem;margin:2px 0 10px}
+.h2filete{margin-bottom:36px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.peca-link{text-decoration:none;color:inherit}
+.ver-tudo{margin-top:30px;font-weight:700}
+.forno{background:var(--verde-prof);color:var(--text-on-contrast)}
+.forno .kicker{color:var(--areia)}
+.forno h2{color:#fff}
+.forno .lead{font-family:var(--font-display);font-size:1.35rem;max-width:44ch;line-height:1.6;margin-bottom:44px}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:22px}
+.steps .n{font-family:var(--font-display);font-style:italic;font-size:1.9rem;color:var(--areia)}
+.steps h3{font-size:1rem;margin:6px 0 4px;color:#fff;font-family:var(--font-body);font-weight:700}
+.steps p{font-size:.88rem;color:#C8D8CC}
+.apoio{background:var(--osso)}
+.aulas{padding-top:48px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--osso);border-radius:var(--radius-card);padding:26px 26px 24px}
+.card svg{display:block;margin-bottom:12px}
+.card h3{font-size:1.15rem;margin-bottom:6px}
+.card p{font-size:.95rem;color:#5c554a}
+.after{margin-top:28px;color:#5c554a}
+.quote{background:var(--areia-claro);position:relative;overflow:hidden}
+.quote::after{content:"";position:absolute;right:-8%;top:-30%;width:46%;height:160%;background:radial-gradient(50% 50% at 50% 50%,rgba(201,214,226,.5),transparent 70%)}
+.quote blockquote{position:relative;font-family:var(--font-display);font-style:italic;font-size:clamp(1.35rem,2.4vw,1.75rem);line-height:1.55;max-width:36ch}
+.quote .who{position:relative;margin-top:18px;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+@media(max-width:840px){.hero,.cards{grid-template-columns:1fr}.gal{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.gal,.cards{grid-template-columns:1fr}}
+</style>

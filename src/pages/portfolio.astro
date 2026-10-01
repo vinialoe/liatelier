@@ -1,0 +1,109 @@
+---
+import Base from '../layouts/Base.astro';
+import Filete from '../components/Filete.astro';
+import Foto from '../components/Foto.astro';
+import { getImage } from 'astro:assets';
+import site from '../data/site.json';
+import { getCollection } from 'astro:content';
+
+const todas = await getCollection('pecas');
+// mosaico de abertura: curadoria própria (diferente da home)
+const capas = todas.filter((p) => p.data.mosaico).sort((a, b) => (a.data.mosaico ?? 9) - (b.data.mosaico ?? 9)).map((p) => ({ src: p.data.foto, alt: p.data.alt }));
+const grade = await Promise.all(
+  todas.filter((p) => !p.data.mosaico).sort((a, b) => a.data.ordem - b.data.ordem).map(async (p) => ({
+    ...p.data,
+    // versão ampliada (lightbox): a master inteira, sem redução
+    ampliada: await getImage({ src: p.data.foto, width: p.data.foto.width, format: 'webp', quality: 90 }),
+  })),
+);
+// largura CSS de cada slot — o navegador escolhe o arquivo pelo slot, não pela master
+const sizesHeroi = '(max-width:720px) calc(100vw - 20px), (max-width:1200px) calc(66.7vw - 17px), 783px';
+const sizesCapa = '(max-width:720px) calc(50vw - 15px), (max-width:1200px) calc(33.3vw - 14px), 387px';
+const sizesGrade = '(max-width:720px) calc(50vw - 30px), (max-width:1120px) calc(33.3vw - 28px), 346px';
+---
+<Base
+  title="Portfólio — Liatelier · peças de cerâmica pintadas à mão"
+  description="Portfólio completo do Liatelier: peças de cerâmica em faiança e porcelana pintadas à mão por Lia Mara Jorge Aloe — baixo-esmalte, alta temperatura e repertório clássico."
+>
+  <div class="wrap intro">
+    <h1>Portfólio</h1>
+    <Filete cor="#4E7A5F" largura={180} />
+    <p>Peças pintadas à mão por Lia Mara Jorge Aloe — cerâmica e porcelana com a técnica de baixo esmalte e alta temperatura, do desenho sobre o biscoito às queimas de 998 °C a 1.240 °C.</p>
+  </div>
+
+  <div class="mosaico" aria-label="Destaques do portfólio">
+    {capas.map((c, i) => (
+      <Foto src={c.src} alt={c.alt} sizes={i === 0 ? sizesHeroi : sizesCapa} prioridade={i === 0} class={`m${i + 1}`} />
+    ))}
+  </div>
+
+  <div class="wrap galeria">
+    <div class="grade">
+      {grade.map((p) => (
+        <figure>
+          <button class="zoom" data-src={p.ampliada.src} data-w={p.foto.width} data-h={p.foto.height} data-alt={p.alt} aria-label="Ampliar foto da peça">
+            <Foto src={p.foto} alt={p.alt} sizes={sizesGrade} />
+          </button>
+        </figure>
+      ))}
+    </div>
+  </div>
+
+  <div class="wrap fechamento">
+    <h2>Gostou de alguma peça?</h2>
+    <p>O portfólio é uma vitrine do trabalho do ateliê. Para conversar sobre peças, aulas ou experiências:</p>
+    <p class="ctas">
+      <a class="btn" href={site.contato.whatsapp}>Falar no WhatsApp</a>
+      <a class="btn ghost" href={site.contato.instagram}>Ver no Instagram</a>
+    </p>
+  </div>
+
+  <dialog id="lightbox">
+    <button id="lb-fechar" aria-label="Fechar">×</button>
+    <img id="lb-img" alt="" />
+  </dialog>
+</Base>
+
+<script>
+  const dlg = document.getElementById('lightbox') as HTMLDialogElement;
+  const img = document.getElementById('lb-img') as HTMLImageElement;
+  document.querySelectorAll<HTMLButtonElement>('.zoom').forEach((b) => {
+    b.addEventListener('click', () => {
+      img.removeAttribute('src'); // não mostrar a foto anterior enquanto a nova carrega
+      img.width = Number(b.dataset.w);
+      img.height = Number(b.dataset.h);
+      img.alt = b.dataset.alt ?? '';
+      img.src = b.dataset.src ?? '';
+      dlg.showModal();
+    });
+  });
+  document.getElementById('lb-fechar')?.addEventListener('click', () => dlg.close());
+  dlg?.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+</script>
+
+<style>
+.intro{padding:48px 24px 28px;text-align:center}
+.intro :global(.filete){margin:0 auto}
+/* mosaico: TODAS as células quadradas — a foto inteira aparece, sem corte (fix produção 2026-08-04) */
+.mosaico{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:0 10px;max-width:1200px;margin:0 auto 64px} /* herói ≤ ~790px CSS: dentro da resolução nativa 1024 */
+.mosaico :global(img){width:100%;height:100%;aspect-ratio:1;object-fit:cover;display:block;box-shadow:var(--shadow-soft);border-radius:var(--radius-image)}
+.mosaico :global(.m1){grid-column:span 2;grid-row:span 2}
+@media(max-width:720px){.mosaico{grid-template-columns:repeat(2,1fr)}}
+h1{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:8px}
+.intro p{max-width:62ch;margin:18px auto 0;color:#5c554a}
+.galeria{padding:40px 24px}
+.grade{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grade figure{margin:0}
+.zoom{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in;border-radius:var(--radius-image);overflow:hidden}
+.grade :global(img){width:100%;height:auto;aspect-ratio:1;object-fit:cover;display:block;box-shadow:0 8px 20px -12px rgba(55,50,43,.35);border-radius:var(--radius-image)}
+
+.fechamento{padding:24px 24px 88px;text-align:center}
+.fechamento h2{font-size:1.6rem;margin-bottom:10px}
+.fechamento p{max-width:52ch;margin:0 auto;color:#5c554a}
+.ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+dialog{border:none;border-radius:12px;padding:0;max-width:min(92vw,860px);background:var(--osso)}
+dialog::backdrop{background:rgba(55,50,43,.72)}
+dialog img{width:100%;height:auto;display:block}
+#lb-fechar{position:absolute;top:8px;right:12px;font-size:1.6rem;background:var(--osso);border:none;border-radius:50%;width:40px;height:40px;cursor:pointer}
+@media(max-width:720px){.grade{grid-template-columns:1fr 1fr;gap:12px}}
+</style>

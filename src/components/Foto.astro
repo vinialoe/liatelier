@@ -1,0 +1,31 @@
+---
+// Foto responsiva: o build gera WebP (+ JPEG de reserva) em vários tamanhos a partir da master
+// e o navegador baixa só o tamanho do slot (prop `sizes`). Nunca usar <img> direto na master.
+// AVIF foi medido e descartado (2026-10-01): arquivos menores, mas decodificação ~3x mais lenta
+// que WebP — voltava a travar o scroll em celular.
+import { Picture } from 'astro:assets';
+
+interface Props {
+  src: ImageMetadata;
+  alt: string;
+  sizes: string;              // largura CSS do slot por breakpoint
+  widths?: number[];
+  prioridade?: boolean;       // true só para a imagem principal da dobra (LCP)
+  class?: string;
+}
+const { src, alt, sizes, widths = [360, 480, 720, 1024], prioridade = false, class: classe } = Astro.props;
+// nunca pedir mais pixels do que a master tem (upscale não cria definição)
+const larguras = [...new Set(widths.map((w) => Math.min(w, src.width)))];
+---
+<Picture
+  src={src}
+  alt={alt}
+  widths={larguras}
+  sizes={sizes}
+  formats={['webp']}
+  quality={84}
+  loading={prioridade ? 'eager' : 'lazy'}
+  fetchpriority={prioridade ? 'high' : undefined}
+  decoding="async"
+  class={classe}
+/>

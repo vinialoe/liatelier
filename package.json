@@ -1,0 +1,23 @@
+{
+  "name": "liatelier-site",
+  "version": "0.1.0",
+  "description": "Website do Liatelier (Astro, estático)",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "sync:assets": "node scripts/sync-assets.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
+    "@fontsource-variable/karla": "^5.3.0",
+    "@fontsource-variable/lora": "^5.3.0",
+    "astro": "^7.1.6",
+    "axe-core": "^4.12.1"
+  }
+}

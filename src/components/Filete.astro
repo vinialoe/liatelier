@@ -1,0 +1,8 @@
+---
+interface Props { cor?: string; largura?: number; }
+const { cor = '#C06B3E', largura = 180 } = Astro.props;
+---
+<svg viewBox="0 0 210 14" width={largura} aria-hidden="true" class="filete">
+  <path d="M4 9 C 38 3, 74 12, 112 7 S 176 4, 206 8" stroke={cor} stroke-width="3.2" fill="none" stroke-linecap="round" opacity=".9" />
+</svg>
+<style>.filete{display:block}</style>

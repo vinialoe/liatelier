@@ -1,0 +1,65 @@
+---
+import Base from '../layouts/Base.astro';
+import Filete from '../components/Filete.astro';
+import Barrado from '../components/Barrado.astro';
+import Foto from '../components/Foto.astro';
+import retrato from '../assets/retrato-lia.jpg';
+import site from '../data/site.json';
+const s = site.sobre;
+---
+<Base title="Sobre Lia — Lia Mara Jorge Aloe · Liatelier" description="A trajetória de Lia Mara Jorge Aloe: FAAP, docência, viagens de pesquisa pela Espanha, Portugal e Itália, o baixo-esmalte e três décadas do Liatelier.">
+  <div class="wrap topo">
+    <h1>{s.titulo}</h1>
+    <Filete cor="#C06B3E" largura={180} />
+  </div>
+  <div class="wrap corpo">
+    <div class="bio">
+      {s.bio_paragrafos.map((p) => <p>{p}</p>)}
+    </div>
+    <aside>
+      <div class="art"><Foto src={retrato} alt="Retrato em aquarela de Lia Mara Jorge Aloe pintando uma peça de cerâmica" sizes="(max-width:840px) min(calc(100vw - 48px), 420px), 406px" widths={[360, 480, 720, 960]} /></div>
+      <div class="caption"><span class="nome">Lia Mara Jorge Aloe</span><span class="sub-cap">retrato em aquarela</span></div>
+      <blockquote>“Todos são livres para criar — a personalidade e o estilo de cada pessoa são respeitados.”</blockquote>
+    </aside>
+  </div>
+  <div class="apoio"><Barrado variante="faianca" /></div>
+  <section class="wrap tl">
+    <span class="kicker">Trajetória</span>
+    <h2>Linha do tempo</h2>
+    <div class="h2filete"><Filete cor="#4E7A5F" largura={160} /></div>
+    <ol>
+      {s.timeline.map((t) => (
+        <li><span class="quando">{t.quando}</span><span class="oque">{t.o_que}</span></li>
+      ))}
+    </ol>
+    <p class="cta"><a class="btn" href="/portfolio">Ver o portfólio</a> <a class="btn ghost" href="/aulas">Conhecer as aulas</a></p>
+  </section>
+</Base>
+<style>
+.topo{padding:48px 24px 12px;text-align:center}
+.topo :global(.filete){margin:0 auto}
+h1{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:8px}
+.corpo{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;padding:32px 24px 72px;align-items:start}
+.bio p{margin-bottom:20px;max-width:64ch}
+aside{position:sticky;top:24px}
+.art{position:relative}
+.art::before{content:"";position:absolute;inset:-14px 14px 16px -16px;background:
+ radial-gradient(60% 60% at 30% 40%,rgba(78,122,95,.30),transparent 75%),
+ radial-gradient(50% 55% at 75% 70%,rgba(192,107,62,.28),transparent 75%),var(--areia);
+ border-radius:var(--radius-organic)}
+.art :global(img){position:relative;width:100%;height:auto;border-radius:50% 50% 46% 54%/54% 46% 54% 46%}
+.caption{margin-top:14px;text-align:center;display:flex;flex-direction:column;gap:2px}
+.caption .nome{font-family:var(--font-display);font-size:1.2rem}
+.caption .sub-cap{font-size:.78rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+aside blockquote{font-family:var(--font-display);font-style:italic;font-size:1.1rem;line-height:1.6;color:#5c554a;margin-top:26px;text-align:center}
+.apoio{background:var(--osso)}
+.tl{padding:56px 24px 88px}
+h2{font-size:clamp(1.6rem,3vw,2.1rem);margin:8px 0 6px}
+.h2filete{margin-bottom:30px}
+ol{list-style:none;padding:0;display:grid;gap:0}
+li{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:16px 0;border-bottom:1px solid #E4DAC6;align-items:baseline}
+.quando{font-family:var(--font-display);font-style:italic;font-size:1.15rem;color:var(--terra-texto)}
+.oque{color:#4a463e}
+.cta{margin-top:36px;display:flex;gap:12px;flex-wrap:wrap}
+@media(max-width:840px){.corpo{grid-template-columns:1fr}aside{position:static;max-width:420px;margin:0 auto}li{grid-template-columns:1fr;gap:2px}}
+</style>

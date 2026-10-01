@@ -1,0 +1,20 @@
+---
+// Logo redimensionado no build para a altura exata de uso (1x–3x): reduzir um PNG grande
+// no navegador deixava o traço fino do lettering mole.
+import { Image } from 'astro:assets';
+import logo from '../assets/logo-liatelier.png';
+
+interface Props { altura: number; alt?: string; prioridade?: boolean; }
+const { altura, alt = '', prioridade = false } = Astro.props;
+---
+<Image
+  src={logo}
+  alt={alt}
+  width={altura}
+  height={altura}
+  densities={[1, 1.5, 2, 3]}
+  format="webp"
+  quality={90}
+  loading={prioridade ? 'eager' : 'lazy'}
+  decoding="async"
+/>

@@ -1,0 +1,242 @@
+[
+  {
+    "arquivo": "logo-liatelier.png",
+    "origem": "brand/logo/logo-liatelier-1024.png",
+    "sha256": "debb5e8b4f4f3be60ce25123d206a21f31f4cedc1ef131f0d5999a19a41c2ccb"
+  },
+  {
+    "arquivo": "retrato-lia.jpg",
+    "origem": "foto lia estilizada.jpeg",
+    "sha256": "6ec94de6d9276537cdccaf4b268e1e327eb8b6f70b0f7c211f453b385645a65d"
+  },
+  {
+    "arquivo": "pecas/peca-leopardo.jpg",
+    "origem": "Otimizadas/vaso_leopardo_tropical_liatelier.png",
+    "sha256": "3a038d3f77dd0c4f22ac4a4dcc1f4b5f671dd11cf539a9dff127615bdc81a6cc"
+  },
+  {
+    "arquivo": "pecas/peca-01-2.jpg",
+    "origem": "Otimizadas/1/foto_peca_referencia_1_2_liatelier.png",
+    "sha256": "3f2f28b2f40fe618e6ab37bce1697b8936ad2370bf2c63234aba98f6568a9e1e"
+  },
+  {
+    "arquivo": "pecas/peca-06-2.jpg",
+    "origem": "Otimizadas/6/foto_peca_referencia_6_2_liatelier.png",
+    "sha256": "07b1ffd198b8c5a236b80df92f91c504ae74eec70b3197eccd82daed0567e78f"
+  },
+  {
+    "arquivo": "pecas/peca-18-2.jpg",
+    "origem": "Otimizadas/18/foto_peca_referencia_18_2_liatelier.png",
+    "sha256": "5c4bdc3025a5e47bfed3c6d96e1319b3f6fbcef5428e08b4476ec89fe69e0bf5"
+  },
+  {
+    "arquivo": "pecas/peca-18-1.jpg",
+    "origem": "Otimizadas/18/foto_peca_referencia_18_1_liatelier.png",
+    "sha256": "979b4e6f32f5c6c009453587ae37da6f1ecbb52f3387126519bb3f53e09c170a"
+  },
+  {
+    "arquivo": "pecas/peca-16-3.jpg",
+    "origem": "Otimizadas/16/foto_peca_referencia_16_3_liatelier.png",
+    "sha256": "eedad61fc1bc453d01bb77244bc8e010c7a3e8da580344eca800b5ce823515ea"
+  },
+  {
+    "arquivo": "pecas/peca-02-2.jpg",
+    "origem": "Otimizadas/2/foto_peca_referencia_2_2_liatelier.png",
+    "sha256": "85502d3b931c357850eed85961605336fc1dc51964d8b5b18e99bd891ea561dd"
+  },
+  {
+    "arquivo": "pecas/peca-11-1.jpg",
+    "origem": "Otimizadas/11/foto_peca_referencia_11_1_liatelier.png",
+    "sha256": "54d8cd31e7759ffee6c994d926895a91f443d1722938258d55c17adb2db42042"
+  },
+  {
+    "arquivo": "pecas/peca-05-1.jpg",
+    "origem": "Otimizadas/5/foto_peca_referencia_5_1_liatelier.png",
+    "sha256": "87530e9fa2f48d6ee4ccfeb942317385e77cd51e0216e061824ae4082d640652"
+  },
+  {
+    "arquivo": "pecas/peca-14-3.jpg",
+    "origem": "Otimizadas/14/foto_peca_referencia_14_3_liatelier.png",
+    "sha256": "36c2763fb1d36ee899a29f764248a0285ff156e915c6b423733b41b3fee1508a"
+  },
+  {
+    "arquivo": "pecas/peca-10-1.jpg",
+    "origem": "Otimizadas/10/foto_peca_referencia_10_1_liatelier.png",
+    "sha256": "642f4f0551fa445fba7f1f241e89cd16dd3008093959ab4057d30e0ef3888c87"
+  },
+  {
+    "arquivo": "pecas/peca-01-1.jpg",
+    "origem": "Otimizadas/1/foto_peca_referencia_1_1_liatelier.png",
+    "sha256": "24c8d08cc01bda792f5a0eff31061d781f94a32edc53d2701325fbe6f8fc5604"
+  },
+  {
+    "arquivo": "pecas/peca-01-3.jpg",
+    "origem": "Otimizadas/1/foto_peca_referencia_1_3_liatelier.png",
+    "sha256": "d5b5536a42205b6611a7044b662b42cd739a030ff4f8bdef8d8b1935d8407ed8"
+  },
+  {
+    "arquivo": "pecas/peca-02-3.jpg",
+    "origem": "Otimizadas/2/foto_peca_referencia_2_3_liatelier.png",
+    "sha256": "4ac9a7b663a164c98c1f036f1b225ac99429794a94ac740cad64e28c9cd5ef34"
+  },
+  {
+    "arquivo": "pecas/peca-03-1.jpg",
+    "origem": "Otimizadas/3/foto_peca_referencia_3_1_liatelier.png",
+    "sha256": "c54ac98cf863311ae41938e22ed2eb1d2f5764be0ee359942d31998bc3606839"
+  },
+  {
+    "arquivo": "pecas/peca-03-2.jpg",
+    "origem": "Otimizadas/3/foto_peca_referencia_3_2_liatelier.png",
+    "sha256": "5f8eeb7e52ca2d1014096ba9d5a34449065d6b419d6cf5d6fe22b1bedb605a45"
+  },
+  {
+    "arquivo": "pecas/peca-04-2.jpg",
+    "origem": "Otimizadas/4/foto_peca_referencia_4_2_liatelier.png",
+    "sha256": "79337edf9a1893d89d0e7857cf781942c7f430db6110e140a4df517362b15ce5"
+  },
+  {
+    "arquivo": "pecas/peca-05-2.jpg",
+    "origem": "Otimizadas/5/foto_peca_referencia_5_2_liatelier.png",
+    "sha256": "6fd6533c088248741cbf570b654cb96b420c95f4f045dd65aca7a81f113902a3"
+  },
+  {
+    "arquivo": "pecas/peca-05-3.jpg",
+    "origem": "Otimizadas/5/foto_peca_referencia_5_3_liatelier.png",
+    "sha256": "90bae2195ab8a59dda5ba1145b8669dfe0707ab0ebf1ec09f47cc708e718eb90"
+  },
+  {
+    "arquivo": "pecas/peca-06-1.jpg",
+    "origem": "Otimizadas/6/foto_peca_referencia_6_1_liatelier.png",
+    "sha256": "7bd5b2a37518e80b9b5754539cf6b131c77a44907d10f4923727aee8ff64b28f"
+  },
+  {
+    "arquivo": "pecas/peca-06-3.jpg",
+    "origem": "Otimizadas/6/foto_peca_referencia_6_3_liatelier.png",
+    "sha256": "f538a4f5be791526e6c6c016073bbe43dbff9ce1e94b07c497d8bdb928a6f2a0"
+  },
+  {
+    "arquivo": "pecas/peca-07-1.jpg",
+    "origem": "Otimizadas/7/foto_peca_referencia_7_1_liatelier.png",
+    "sha256": "ff84e193771e688ae3f08e5291574298680513a41f073f89bace69c971d08e8d"
+  },
+  {
+    "arquivo": "pecas/peca-07-2.jpg",
+    "origem": "Otimizadas/7/foto_peca_referencia_7_2_liatelier.png",
+    "sha256": "bf9b46f40530a0e3a81635708662f066c6d93691d0cec2c5850b8868d1521112"
+  },
+  {
+    "arquivo": "pecas/peca-07-3.jpg",
+    "origem": "Otimizadas/7/foto_peca_referencia_7_3_liatelier.png",
+    "sha256": "91207051975937af72657b5abcabfc93d9e90837f420ccf48df27a8345f789b0"
+  },
+  {
+    "arquivo": "pecas/peca-08-1.jpg",
+    "origem": "Otimizadas/8/foto_peca_referencia_8_1_liatelier.png",
+    "sha256": "ee392dc3dd8b53ba618c7968105a8cc1ff9e603ae1d73d8c235a4f9ef76aa12b"
+  },
+  {
+    "arquivo": "pecas/peca-08-2.jpg",
+    "origem": "Otimizadas/8/foto_peca_referencia_8_2_liatelier.png",
+    "sha256": "42135eb6c49499811176990df2c66730c0937698054af939e5c8f98df8f8c494"
+  },
+  {
+    "arquivo": "pecas/peca-09-1.jpg",
+    "origem": "Otimizadas/9/foto_peca_referencia_9_1_liatelier.png",
+    "sha256": "03ffeb5e0e1d31173f00ab073cf50c185f1a332a461909f463d8c4a62493b668"
+  },
+  {
+    "arquivo": "pecas/peca-09-2.jpg",
+    "origem": "Otimizadas/9/foto_peca_referencia_9_2_liatelier.png",
+    "sha256": "aede6701c9dc86475b4cd597d10997fe54e3ffd17c0f9bd06e8de65853409510"
+  },
+  {
+    "arquivo": "pecas/peca-09-3.jpg",
+    "origem": "Otimizadas/9/foto_peca_referencia_9_3_liatelier.png",
+    "sha256": "d625171e882081a15b38504a49364352282b500e17311e36e5d62bd7e08ed949"
+  },
+  {
+    "arquivo": "pecas/peca-12-1.jpg",
+    "origem": "Otimizadas/12/foto_peca_referencia_12_1_liatelier.png",
+    "sha256": "8c6707e8db4a007606b0582c73295596936e94ee5a4ce8ec4dc82699e29ceee9"
+  },
+  {
+    "arquivo": "pecas/peca-12-2.jpg",
+    "origem": "Otimizadas/12/foto_peca_referencia_12_2_liatelier.png",
+    "sha256": "e1d16e7407b606db788a3ee56c810b55bfc53df6f77398147610010514160425"
+  },
+  {
+    "arquivo": "pecas/peca-12-3.jpg",
+    "origem": "Otimizadas/12/foto_peca_referencia_12_3_liatelier.png",
+    "sha256": "f11e9c97f0b75b23a93adf9b37585db0c36ab78b0dbc8feaa64f87f0f1731c83"
+  },
+  {
+    "arquivo": "pecas/peca-13-1.jpg",
+    "origem": "Otimizadas/13/foto_peca_referencia_13_1_liatelier.png",
+    "sha256": "82802d4c5a9ad867c35268cdfc3e1822b8110377234e3eb598b49b1b9fdf091b"
+  },
+  {
+    "arquivo": "pecas/peca-14-1.jpg",
+    "origem": "Otimizadas/14/foto_peca_referencia_14_1_liatelier.png",
+    "sha256": "729c5a88a78ea9a0bbed51047382fb856b6f233e10b6e035326757a61de81286"
+  },
+  {
+    "arquivo": "pecas/peca-14-2.jpg",
+    "origem": "Otimizadas/14/foto_peca_referencia_14_2_liatelier.png",
+    "sha256": "61256e1f3f1204e1e435e29471c6a435b5c4215537ce50c31908d8b7aff01777"
+  },
+  {
+    "arquivo": "pecas/peca-15-1.jpg",
+    "origem": "Otimizadas/15/foto_peca_referencia_15_1_liatelier.png",
+    "sha256": "44f3fa3a34c212f8757774ddb818c8a341a23264da820b167a1f1e60bd572ff1"
+  },
+  {
+    "arquivo": "pecas/peca-15-2.jpg",
+    "origem": "Otimizadas/15/foto_peca_referencia_15_2_liatelier.png",
+    "sha256": "1da0cacab3bfdd07e0d30bb1629cf033a1f95c9722bb811f2a5d7ff8bd4b2a61"
+  },
+  {
+    "arquivo": "pecas/peca-16-1.jpg",
+    "origem": "Otimizadas/16/foto_peca_referencia_16_1_liatelier.png",
+    "sha256": "a9025317242de901e4e746c744c22fd97c5d05e9de3fbce11f0b367c7e7ed318"
+  },
+  {
+    "arquivo": "pecas/peca-16-2.jpg",
+    "origem": "Otimizadas/16/foto_peca_referencia_16_2_liatelier.png",
+    "sha256": "7a267fe6bc065de3436fd37609bb242faf3dd302efd0b677fe7ef3bcf3ec17bb"
+  },
+  {
+    "arquivo": "pecas/peca-17-2.jpg",
+    "origem": "Otimizadas/17/foto_peca_referencia_17_2_liatelier.png",
+    "sha256": "14da0ef8d85bd85d29a7d97bd77ea1154ebd105151b910047008da564694f896"
+  },
+  {
+    "arquivo": "pecas/peca-10-2.jpg",
+    "origem": "Otimizadas/10/foto_peca_referencia_10_2_liatelier.png",
+    "sha256": "7e6f10acb322000ec9bc300d70ac49585f5a5f52ecf5e5b3eb49609950339c84"
+  },
+  {
+    "arquivo": "pecas/peca-04-1.jpg",
+    "origem": "Otimizadas/4/foto_peca_referencia_4_1_liatelier.png",
+    "sha256": "baddd765a3ab94f90e6d53741034751be5d9975cc4d91d0d19de85b2f46e6401"
+  },
+  {
+    "arquivo": "pecas/peca-02-1.jpg",
+    "origem": "Otimizadas/2/foto_peca_referencia_2_1_liatelier.png",
+    "sha256": "e8a46c098016310ed2aeda42218595c8c02966676195b1aa334dd1f90d22b7f7"
+  },
+  {
+    "arquivo": "pecas/peca-03-3.jpg",
+    "origem": "Otimizadas/3/foto_peca_referencia_3_3_liatelier.png",
+    "sha256": "59158e288f579bd478df7d525b5f856ef18820c3937dbf90a3c41f41cfce4661"
+  },
+  {
+    "arquivo": "pecas/peca-08-3.jpg",
+    "origem": "Otimizadas/8/foto_peca_referencia_8_3_liatelier.png",
+    "sha256": "039d04c73a9ebf7e5b2d7dc8a71931e6876dc2cceb884688faf3774dcd41aa10"
+  },
+  {
+    "arquivo": "pecas/peca-13-2.jpg",
+    "origem": "Otimizadas/13/foto_peca_referencia_13_2_liatelier.png",
+    "sha256": "a63754aa120f1deb56cf77e3d1f4a3d2a6909e39250723a7c66a43b715e593a6"
+  }
+]
